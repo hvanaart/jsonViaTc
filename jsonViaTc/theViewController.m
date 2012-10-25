@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     // TLC test server communication
-    NSString *urlString = [NSString stringWithFormat:@"http://root.mkernel.de"];
+    NSString *urlString = [NSString stringWithFormat:@"yourserver.com"];
     NSInteger port = 5555;
     
     iterator = [NSNumber numberWithUnsignedInt:0];
