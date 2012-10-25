@@ -10,10 +10,20 @@
 
 @interface theViewController : UIViewController <NSStreamDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField *methodName;
+@property (strong, nonatomic) IBOutlet UITextField *param1;
+@property (strong, nonatomic) IBOutlet UITextField *param2;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *serverAnswer;
+@property (strong, nonatomic) IBOutlet UILabel *jsonResult;
+
+@property (strong, nonatomic) NSNumber *iterator;
+
 - (void) initNetworkConnectionWithSSL:(BOOL)useSSL urlString:(NSString*)url portNumber:(NSInteger)port;
-- (void) sendJSON;
 - (NSString *)getString:(NSData*)theData;
 
+- (IBAction)sendJSON;
 
 @end
 
